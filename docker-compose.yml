@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  vault:
+    image: vault
+    environment:
+      VAULT_SERVER: http:127.0.0.1:8200
+      VAULT_DEV_ROOT_TOKEN_ID: 123456789
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - 8200:8200
+# docker run --cap-add=IPC_LOCK -d -p 8200:8200 -e VAULT_SERVER="http://127.0.0.1:8200" -e VAULT_DEV_ROOT_TOKEN_ID="$VAULT_TOKEN" --name=dev-vault vault
