@@ -12,8 +12,6 @@ export VAULT_ADDR="http://localhost:8200"
 echo "init"
 vault secrets enable -path=jonathan.vautier@gmail.com kv
 vault kv enable-versioning jonathan.vautier@gmail.com/
-vault secrets enable -path=jonathan.vautier@ubisoft.com kv
-vault kv enable-versioning jonathan.vautier@ubisoft.com/
 
 store_name="secrets"
 store_path="$KV_ROOT_DIR/$store_name"
