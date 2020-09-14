@@ -1,0 +1,9 @@
+---
+fullname: jvautier/docker-compose-vault
+description: Docker-compose development stack with vault.
+tags:
+  - development
+  - docker
+  - docker-compose
+  - vault
+github: {}
