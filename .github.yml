@@ -1,4 +1,5 @@
 ---
+# See https://github.com/jvautier/project-cli
 fullname: jvautier/docker-compose-vault
 description: Docker-compose development stack with vault.
 tags:
